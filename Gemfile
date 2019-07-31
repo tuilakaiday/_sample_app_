@@ -15,7 +15,10 @@ gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+# rubocop to check syntax
 gem "rubocop", "~> 0.54.0", require: false
+# Support mutil language
+gem "rails-i18n"
 
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
