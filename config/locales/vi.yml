@@ -1,19 +1,21 @@
 vi:
   hello: "Xin chào!"
   static_pages:
+    base_title: "Hướng dẫn học Ruby on Rails"
     home:
-      title: "Trang chủ | Hướng dẫn Ruby on Rails"
+      title: "Trang chủ"
       page_name: "Trang chủ"
       content: "Đây là trang chủ %{link_home} với ứng dụng mẫu."
       tutorial_href: "hướng dẫn Ruby on Rails"
     help:
-      title: "Trang hỗ trợ | Hướng dẫn Ruby on Rails"
+      title: "Trang hỗ trợ"
       page_name: "Hỗ trợ"
-      content: "Nhận sự hỗ trợ về Ruby on Rails tại %{link_help}. Để nhận sự hỗ trợ về ứng dụng mẫu, hãy đọc %{link_book}."
+      content: "Nhận sự hỗ trợ về Ruby on Rails tại %{link_help}.
+                Để nhận sự hỗ trợ về ứng dụng mẫu, hãy đọc %{link_book}."
       help_href: "hỗ trợ học Rails"
       book_href: "quyển sách Ruby on Rails Tutorial"
     about:
-      title: "Thông tin thêm | Ruby on Rails Tutorial"
+      title: "Thông tin thêm"
       page_name: "Thông tin thêm"
       content: "Trang %{link_home} là một %{link_book} và %{link_screencast}
                 để dạy cho các lập trình viên về %{link_rails}.
