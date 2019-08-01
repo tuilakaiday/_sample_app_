@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= I18n.t(".design_by.content", link_home: link_to(I18n.t(".static_pages.home.tutorial_href"),
+      "https://www.railstutorial.org/"),
+      link_pro: link_to(I18n.t(".design_by.pro_href"),
+      "http://www.michaelhartl.com/")).html_safe %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to I18n.t(".static_pages.about.title"), about_path %></li>
+      <li><%= link_to I18n.t(".static_pages.contact.title"), contact_path %></li>
+      <li><%= link_to I18n.t(".static_pages.news.title"), "#" %></li>
+    </ul>
+  </nav>
+</footer>

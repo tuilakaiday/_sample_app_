@@ -1,19 +1,24 @@
 vi:
   hello: "Xin chào!"
+  btn_en: "English"
+  btn_vi: "Vietnamese"
   static_pages:
     base_title: "Hướng dẫn học Ruby on Rails"
     home:
       title: "Trang chủ"
+      btn_login: "Đăng kí ngay!"
       page_name: "Trang chủ"
       content: "Đây là trang chủ %{link_home} với ứng dụng mẫu."
       tutorial_href: "hướng dẫn Ruby on Rails"
+
     help:
       title: "Trang hỗ trợ"
       page_name: "Hỗ trợ"
       content: "Nhận sự hỗ trợ về Ruby on Rails tại %{link_help}.
-                Để nhận sự hỗ trợ về ứng dụng mẫu, hãy đọc %{link_book}."
+                 Để nhận sự hỗ trợ về ứng dụng mẫu, hãy đọc %{link_book}."
       help_href: "hỗ trợ học Rails"
       book_href: "quyển sách Ruby on Rails Tutorial"
+
     about:
       title: "Thông tin thêm"
       page_name: "Thông tin thêm"
@@ -24,3 +29,19 @@ vi:
       book_href: "quyển sách Ruby on Rails Tutorial"
       screencast_href: "loạt screencast"
       rails_href: "Ruby on Rails"
+
+    contact:
+      title: "Liên hệ"
+      page_name: "Liên hệ"
+      content: "Đây là trang liên hệ!"
+
+    news:
+      title: "Tin Tức"
+
+    login:
+      title: "Đăng kí"
+
+  design_by:
+    content: "Bài %{link_home} được làm bởi %{link_pro} ."
+    pro_href: "Michael Hartl"
+
