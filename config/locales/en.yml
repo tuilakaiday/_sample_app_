@@ -40,6 +40,10 @@ en:
 
     login:
       title: "Login"
+  users:
+    sign_up:
+      title: "Sign Up"
+      content: "This is sign up page. OK!"
 
   design_by:
     content: "The %{link_home} made by %{link_pro} ."

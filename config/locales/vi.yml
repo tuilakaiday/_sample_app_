@@ -39,7 +39,11 @@ vi:
       title: "Tin Tức"
 
     login:
+      title: "Đăng nhập"
+  users:
+    sign_up:
       title: "Đăng kí"
+      content: "Đây là trang đăng kí tài khoản."
 
   design_by:
     content: "Bài %{link_home} được làm bởi %{link_pro} ."
