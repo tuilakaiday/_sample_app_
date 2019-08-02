@@ -1,0 +1,16 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to image_tag("rails.png", alt: "Rails logo"), root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to I18n.t(".static_pages.home.title"), root_path %></li>
+        <li><%= link_to I18n.t(".static_pages.help.title"), help_path %></li>
+        <li><%= link_to I18n.t(".static_pages.login.title"), "#" %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to I18n.t(".btn_en"), locale:"en" %></li>
+        <li><%= link_to I18n.t(".btn_vi"), locale:"vi" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
