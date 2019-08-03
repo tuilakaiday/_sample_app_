@@ -1,12 +1,25 @@
 en:
   hello: "Hello!"
-  btn_en: "English"
-  btn_vi: "Vietnamese"
+
+  _header:
+    btn_en: "English"
+    btn_vi: "Vietnamese"
+    btn_home: "Home"
+    btn_help: "Help"
+    btn_login: "Login"
+  _footer:
+    design_by:
+      content: "The %{link_home} made by %{link_pro} ."
+      pro_href: "Michael Hartl"
+    btn_about: "About"
+    btn_contact: "Contact"
+    btn_news: "News"
+
   static_pages:
     base_title: "Ruby on Rails Tutorial"
     home:
       title: "Home"
-      btn_login: "Sign up now!"
+      btn_sign_up: "Sign up now!"
       page_name: "Home"
       content: "This is the home page for the %{link_home} sample application."
       tutorial_href: "Ruby on Rails Tutorial"
@@ -40,12 +53,18 @@ en:
 
     login:
       title: "Login"
+
   users:
-    sign_up:
+    new:
       title: "Sign Up"
       content: "This is sign up page. OK!"
+      lb_name: "Name"
+      lb_email: "Email"
+      lb_password: "Password"
+      lb_password_confirmation: "Password Confirmation"
+      btn_create: "Create my account"
 
-  design_by:
-    content: "The %{link_home} made by %{link_pro} ."
-    pro_href: "Michael Hartl"
+    welcome_messages: "Welcome %{user_name} to Blog! "
+
+
 

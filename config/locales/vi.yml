@@ -1,12 +1,25 @@
 vi:
   hello: "Xin chào!"
-  btn_en: "English"
-  btn_vi: "Vietnamese"
+
+  _header:
+    btn_en: "English"
+    btn_vi: "Vietnamese"
+    btn_home: "Trang chủ"
+    btn_help: "Hỗ trợ"
+    btn_login: "Đăng nhập"
+  _footer:
+    design_by:
+      content: "Bài %{link_home} được làm bởi %{link_pro} ."
+      pro_href: "Michael Hartl"
+    btn_about: "Thông tin thêm"
+    btn_contact: "Liên hệ"
+    btn_news: "Tin tức"
+
   static_pages:
     base_title: "Hướng dẫn học Ruby on Rails"
     home:
       title: "Trang chủ"
-      btn_login: "Đăng kí ngay!"
+      btn_sign_up: "Đăng kí ngay!"
       page_name: "Trang chủ"
       content: "Đây là trang chủ %{link_home} với ứng dụng mẫu."
       tutorial_href: "hướng dẫn Ruby on Rails"
@@ -40,12 +53,17 @@ vi:
 
     login:
       title: "Đăng nhập"
+
   users:
-    sign_up:
+    new:
       title: "Đăng kí"
       content: "Đây là trang đăng kí tài khoản."
+      lb_name: "Tên của bạn"
+      lb_email: "Email"
+      lb_password: "Mật khẩu"
+      lb_password_confirmation: "Xác nhận mật khẩu"
+      btn_create: "Tạo tài khoản"
 
-  design_by:
-    content: "Bài %{link_home} được làm bởi %{link_pro} ."
-    pro_href: "Michael Hartl"
+    welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+
 
