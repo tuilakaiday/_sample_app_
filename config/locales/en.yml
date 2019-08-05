@@ -19,7 +19,6 @@ en:
       btn_about: "About"
       btn_contact: "Contact"
       btn_news: "News"
-
   static_pages:
     base_title: "Ruby on Rails Tutorial"
     home:
@@ -74,6 +73,7 @@ en:
       lb_password: "Password"
       lb_create_new_user: "Create a new user? %{link_signup}!."
       sign_up_href: "Sign up now"
+      lb_check_box: "Remember login in on this computer?"
     create:
       flash_login_error_message: "Invalid email/password combination"
 

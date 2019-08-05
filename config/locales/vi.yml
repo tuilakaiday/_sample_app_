@@ -73,7 +73,7 @@ vi:
       lb_password: "Mật khẩu"
       lb_create_new_user: "Tạo một tài khoản mới? %{link_signup}!."
       sign_up_href: "Đăng kí ngay"
-      error_message: "Email hoặc mật khẩu không đúng!"
+      lb_check_box: "Ghi nhớ đăng nhập?"
     create:
       flash_login_error_message: "Email hoặc password không đúng!"
 
