@@ -1,16 +1,16 @@
 <footer class="footer">
   <small>
-    <%= I18n.t("._footer.design_by.content",
+    <%= t(".design_by.content",
       link_home: link_to(I18n.t(".static_pages.home.tutorial_href"),
       "https://www.railstutorial.org/"),
-      link_pro: link_to(I18n.t("._footer.design_by.pro_href"),
+      link_pro: link_to(t(".design_by.pro_href"),
       "http://www.michaelhartl.com/")).html_safe %>
   </small>
   <nav>
     <ul>
-      <li><%= link_to I18n.t("._footer.btn_about"), about_path %></li>
-      <li><%= link_to I18n.t("._footer.btn_contact"), contact_path %></li>
-      <li><%= link_to I18n.t("._footer.btn_news"), "#" %></li>
+      <li><%= link_to t(".btn_about"), about_path %></li>
+      <li><%= link_to t(".btn_contact"), contact_path %></li>
+      <li><%= link_to t(".btn_news"), "#" %></li>
     </ul>
   </nav>
 </footer>

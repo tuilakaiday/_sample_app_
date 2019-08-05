@@ -11,6 +11,8 @@ gem "bootstrap-sass", "3.3.7"
 gem "mysql2", ">= 0.4.4", "< 0.6.0"
 # Use config
 gem "config"
+# Use jquery
+gem "jquery-rails"
 # Use Puma as the app server
 gem "puma", "~> 3.11"
 # Use SCSS for stylesheets
