@@ -1,19 +1,24 @@
 en:
   hello: "Hello!"
-
-  _header:
-    btn_en: "English"
-    btn_vi: "Vietnamese"
-    btn_home: "Home"
-    btn_help: "Help"
-    btn_login: "Login"
-  _footer:
-    design_by:
-      content: "The %{link_home} made by %{link_pro} ."
-      pro_href: "Michael Hartl"
-    btn_about: "About"
-    btn_contact: "Contact"
-    btn_news: "News"
+  layouts:
+    header:
+      btn_en: "English"
+      btn_vi: "Vietnamese"
+      btn_home: "Home"
+      btn_help: "Help"
+      btn_account: "Account"
+      btn_login: "Log In"
+      btn_logout: "Log Out"
+      btn_profile: "Profile"
+      btn_settings: "Settings"
+      btn_users: "Users"
+    footer:
+      design_by:
+        content: "The %{link_home} made by %{link_pro} ."
+        pro_href: "Michael Hartl"
+      btn_about: "About"
+      btn_contact: "Contact"
+      btn_news: "News"
 
   static_pages:
     base_title: "Ruby on Rails Tutorial"
@@ -61,8 +66,15 @@ en:
       lb_password: "Password"
       lb_password_confirmation: "Password Confirmation"
       btn_create: "Create my account"
-
     welcome_messages: "Welcome %{user_name} to Blog! "
-
+  sessions:
+    new:
+      title: "Log In"
+      lb_email: "Email"
+      lb_password: "Password"
+      lb_create_new_user: "Create a new user? %{link_signup}!."
+      sign_up_href: "Sign up now"
+    create:
+      flash_login_error_message: "Invalid email/password combination"
 
 

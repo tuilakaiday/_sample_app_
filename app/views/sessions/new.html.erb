@@ -1,0 +1,22 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t(".title") %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label t(".lb_email") %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :password, t(".lb_password") %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.submit t(".title"), class: "btn btn-primary" %>
+    <% end %>
+
+    <p>
+      <%= t(".lb_create_new_user",
+        link_signup: link_to(t(".sign_up_href"), signup_path)).html_safe %>
+    </p>
+  </div>
+</div>

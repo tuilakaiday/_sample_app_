@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t ".welcome_messages", user_name: @user.name
       redirect_to @user
     else
@@ -17,7 +18,6 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     redirect_to notfound_path if @user.nil?
   end
-
 
   private
   def user_params

@@ -1,20 +1,24 @@
 vi:
   hello: "Xin chào!"
-
-  _header:
-    btn_en: "English"
-    btn_vi: "Vietnamese"
-    btn_home: "Trang chủ"
-    btn_help: "Hỗ trợ"
-    btn_login: "Đăng nhập"
-  _footer:
-    design_by:
-      content: "Bài %{link_home} được làm bởi %{link_pro} ."
-      pro_href: "Michael Hartl"
-    btn_about: "Thông tin thêm"
-    btn_contact: "Liên hệ"
-    btn_news: "Tin tức"
-
+  layouts:
+    header:
+      btn_en: "English"
+      btn_vi: "Vietnamese"
+      btn_home: "Trang chủ"
+      btn_help: "Hỗ trợ"
+      btn_login: "Đăng nhập"
+      btn_account: "Tài khoản"
+      btn_logout: "Đăng xuất"
+      btn_profile: "Thông tin cá nhân"
+      btn_settings: "Cài đặt"
+      btn_users: "Tất cả người dùng"
+    footer:
+      design_by:
+        content: "Bài %{link_home} được làm bởi %{link_pro} ."
+        pro_href: "Michael Hartl"
+      btn_about: "Thông tin thêm"
+      btn_contact: "Liên hệ"
+      btn_news: "Tin tức"
   static_pages:
     base_title: "Hướng dẫn học Ruby on Rails"
     home:
@@ -61,7 +65,16 @@ vi:
       lb_password: "Mật khẩu"
       lb_password_confirmation: "Xác nhận mật khẩu"
       btn_create: "Tạo tài khoản"
-
     welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      lb_email: "Email"
+      lb_password: "Mật khẩu"
+      lb_create_new_user: "Tạo một tài khoản mới? %{link_signup}!."
+      sign_up_href: "Đăng kí ngay"
+      error_message: "Email hoặc mật khẩu không đúng!"
+    create:
+      flash_login_error_message: "Email hoặc password không đúng!"
 
 
