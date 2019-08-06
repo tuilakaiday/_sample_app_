@@ -19,7 +19,6 @@ en:
       btn_about: "About"
       btn_contact: "Contact"
       btn_news: "News"
-
   static_pages:
     base_title: "Ruby on Rails Tutorial"
     home:
@@ -61,12 +60,25 @@ en:
     new:
       title: "Sign Up"
       content: "This is sign up page. OK!"
+      btn_create: "Create account"
+    welcome_messages: "Welcome %{user_name} to Blog! "
+    edit:
+      title: "Edit"
+      heading: "Update your profile"
+      btn_update: "Update"
+    index:
+      title: "All Users"
+    success_update_messages: "Updated your profile!"
+    success_deleted_message: "Deleted complete"
+    plz_login: "Please login!"
+    user:
+      btn_delete: "Delete"
+      confirm_messages: "Are you sure delete user %{user_name}?"
+    form:
       lb_name: "Name"
       lb_email: "Email"
       lb_password: "Password"
       lb_password_confirmation: "Password Confirmation"
-      btn_create: "Create my account"
-    welcome_messages: "Welcome %{user_name} to Blog! "
   sessions:
     new:
       title: "Log In"
@@ -74,6 +86,7 @@ en:
       lb_password: "Password"
       lb_create_new_user: "Create a new user? %{link_signup}!."
       sign_up_href: "Sign up now"
+      lb_check_box: "Remember login in on this computer?"
     create:
       flash_login_error_message: "Invalid email/password combination"
 

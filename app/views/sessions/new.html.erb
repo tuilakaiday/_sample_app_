@@ -8,8 +8,13 @@
       <%= f.label t(".lb_email") %>
       <%= f.email_field :email, class: "form-control" %>
 
-      <%= f.label :password, t(".lb_password") %>
+      <%= f.label t(".lb_password") %>
       <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span><%= t(".lb_check_box") %></span>
+      <% end %>
 
       <%= f.submit t(".title"), class: "btn btn-primary" %>
     <% end %>
