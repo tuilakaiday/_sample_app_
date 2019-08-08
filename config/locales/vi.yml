@@ -59,13 +59,26 @@ vi:
   users:
     new:
       title: "Đăng kí"
-      content: "Đây là trang đăng kí tài khoản."
+      btn_create: "Tạo tài khoản"
+    welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+    edit:
+      title: "Chỉnh sửa"
+      heading: "Cập nhật thông tin cá nhân"
+      btn_update: "Cập nhật"
+    index:
+      title: "Tất cả người dùng"
+    success_update_messages: "Đã cập nhật thông tin của bạn!"
+    success_deleted_message: "Đã xóa thành công! "
+    plz_login: "Vui lòng đăng nhập!"
+    user:
+      btn_delete: "Xóa"
+      confirm_messages: "Bạn có chắc muốn xóa người dùng %{user_name}?"
+    form:
       lb_name: "Tên của bạn"
       lb_email: "Email"
       lb_password: "Mật khẩu"
       lb_password_confirmation: "Xác nhận mật khẩu"
-      btn_create: "Tạo tài khoản"
-    welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+
   sessions:
     new:
       title: "Đăng nhập"

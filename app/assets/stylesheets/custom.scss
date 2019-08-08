@@ -7,6 +7,7 @@ $white-medium: #fff;
 $gray-light: #787878;
 $gray-darker: #1f1f1f;
 $gray-input: #bbb;
+$gray-lighter: #10bbb1;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -184,4 +185,14 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
