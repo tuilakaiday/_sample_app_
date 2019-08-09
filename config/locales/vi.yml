@@ -89,6 +89,7 @@ vi:
       lb_create_new_user: "Tạo một tài khoản mới? %{link_signup}!."
       sign_up_href: "Đăng kí ngay"
       lb_check_box: "Ghi nhớ đăng nhập?"
+      lb_forgot: "(Quên mật khẩu)"
     create:
       flash_login_error_message: "Email hoặc password không đúng!"
       error_activation: "Tài khoản của bạn chưa được kích hoạt! Hãy kiểm tra email!"
@@ -99,10 +100,30 @@ vi:
       welcome: "Chào %{name}!"
       content_mailer: "Đây là email hướng dẫn bạn kích hoạt tài khoản Sample App. Vui lòng click link bên dưới:"
       btn_activate: "Kích hoạt"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      welcome: "Chào %{name}!"
+      content_mailer: "Đây là email giúp bạn đặt lại mật khẩu. Vui click link bên dưới để đặt lại mạt khẩu.
+                        Chú ý: Thời hạn 2 giờ trước khi link vô hiệu!"
+      btn_reset: "Đặt lại mật khẩu"
 
   account_activations:
     edit:
       success_activated: "Tài khoản của bạn đã được kích hoạt"
       error_link_activation: "Link kích hoạt không được chấp nhận!"
+  password_resets:
+    new:
+      title: "Đặt lại mật khẩu"
+      btn_reset: Yêu cầu
+    edit:
+      title: "Đặt lại mật khẩu"
+      lb_password: "Mật khẩu"
+      lb_password_confirmation: "Xác nhận mật khẩu"
+      btn_update: "Cập nhật"
+    update:
+      error_empty: "Mật khẩu không được để trống!"
+      success_update: "Mật khẩu đã được đặt lại"
+    error_expired: "Hết hạn đặt lại mật khẩu!"
+
 
 
