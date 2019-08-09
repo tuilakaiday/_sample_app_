@@ -11,19 +11,22 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome_messages", user_name: @user.name
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t(".check_your_email")
+      redirect_to root_url
     else
       render :new
     end
   end
 
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.per_page
+    @users = User.where(activated: true).paginate(page: params[:page],
+              per_page: Settings.per_page)
   end
 
-  def show; end
+  def show
+    redirect_to(root_url) && return if @user.activated
+  end
 
   def edit; end
 
