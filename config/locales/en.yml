@@ -1,127 +1,144 @@
+---
 en:
-  hello: "Hello!"
+  account_activations:
+    edit:
+      error_link_activation: "This link is Invalid!"
+      success_activated: "Your account is activated!"
+  alert:
+    micropost:
+      error_size_image: "Maximum file size is 5Mb. Please choose a smaller file."
+  hello: Hello!
   layouts:
-    header:
-      btn_en: "English"
-      btn_vi: "Vietnamese"
-      btn_home: "Home"
-      btn_help: "Help"
-      btn_account: "Account"
-      btn_login: "Log In"
-      btn_logout: "Log Out"
-      btn_profile: "Profile"
-      btn_settings: "Settings"
-      btn_users: "Users"
     footer:
+      btn_about: About
+      btn_contact: Contact
+      btn_news: News
       design_by:
         content: "The %{link_home} made by %{link_pro} ."
         pro_href: "Michael Hartl"
-      btn_about: "About"
-      btn_contact: "Contact"
-      btn_news: "News"
-  static_pages:
-    base_title: "Ruby on Rails Tutorial"
-    home:
-      title: "Home"
-      btn_sign_up: "Sign up now!"
-      page_name: "Home"
-      content: "This is the home page for the %{link_home} sample application."
-      tutorial_href: "Ruby on Rails Tutorial"
-
-    help:
-      title: "Help"
-      page_name: "Help"
-      content: "Get help on the Ruby on Rails Tutorial at the %{link_help}.
-                To get help on this sample app, see the %{link_book}."
-      help_href: "Rails Tutorial help section"
-      book_href: "Ruby on Rails Tutorial book"
-
-    about:
-      title: "About"
-      page_name: "About"
-      content: "The %{link_home} is a %{link_book} and %{link_screencast}
-                to teach web development with %{link_rails}.
-                This is the sample application for the tutorial."
-      tutorial_href: "Ruby on Rails Tutorial"
-      book_href: "Ruby on Rails Tutorial book"
-      screencast_href: "screencast series"
-      rails_href: "Ruby on Rails"
-
-    contact:
-      title: "Contact"
-      page_name: "Contact"
-      content: "This is contact page"
-
-    not_found:
-      title: "Not Found"
-      content: "404 Not Found"
-
-  users:
-    new:
-      title: "Sign Up"
-      content: "This is sign up page. OK!"
-      btn_create: "Create account"
-    welcome_messages: "Welcome %{user_name} to Blog! "
+    header:
+      btn_account: Account
+      btn_en: English
+      btn_help: Help
+      btn_home: Home
+      btn_login: "Log In"
+      btn_logout: "Log Out"
+      btn_profile: Profile
+      btn_settings: Settings
+      btn_users: Users
+      btn_vi: Vietnamese
+  microposts:
     create:
-      check_your_email: "Check your email to activation your account!"
-    edit:
-      title: "Edit"
-      heading: "Update your profile"
-      btn_update: "Update"
-    index:
-      title: "All Users"
-    success_update_messages: "Updated your profile!"
-    success_deleted_message: "Deleted complete"
-    plz_login: "Please login!"
-    user:
-      btn_delete: "Delete"
-      confirm_messages: "Are you sure delete user %{user_name}?"
-    form:
-      lb_name: "Name"
-      lb_email: "Email"
-      lb_password: "Password"
-      lb_password_confirmation: "Password Confirmation"
-  sessions:
-    new:
-      title: "Log In"
-      lb_email: "Email"
-      lb_password: "Password"
-      lb_create_new_user: "Create a new user? %{link_signup}!."
-      sign_up_href: "Sign up now"
-      lb_check_box: "Remember login in on this computer?"
-      lb_forgot: "(Forgot password)"
-    create:
-      flash_login_error_message: "Invalid email/password combination"
-      error_activation: "Your account is not activated! Please check your mail!"
-
-  user_mailer:
-    account_activation:
-      title: "Account activation"
-      welcome: "Hi %{name}!"
-      content_mailer: "This email use to activate your account Sample App. Please click in link underneath"
-      btn_activate: "Activate"
-    password_reset:
-      title: "Password Reset"
-      welcome: "Hi %{name}"
-      content_mailer: "This email use to reset you password. expired in 2 hours. Please click link underneath"
-      btn_reset: "Reset"
-  account_activations:
-    edit:
-      success_activated: "Your account is activated!"
-      error_link_activation: "This link is Invalid!"
+      errors_delete: "Delete post isn't complete!"
+      success_created: "Micropost created!"
+      success_deleted: "Micropost deleted"
+    limmit_size_pic: "should be less than 5MB"
+    micropost:
+      btn_delete: Delete
+      messages_sure: "Are you sure?"
+      posted_ago: "Posted %{time} ago."
+    correct_user:
+      missing_micropost: "Bài đăng không tồn tại!"
   password_resets:
-    new:
-      title: "Reset password"
-      btn_reset: "Reset"
     create:
-      success_sent_email_reset: "Email sent with password reset instructions"
       error_notfound_email: "Email address not found"
+      success_sent_email_reset: "Email sent with password reset instructions"
     edit:
+      btn_update: Update
+      lb_password: Password
+      lb_password_confirmation: Confirmation
       title: "Update password"
-      lb_password: "Password"
-      lb_password_confirmation: "Confirmation"
-      btn_update: "Update"
+    error_expired: "Password reset has expired."
+    new:
+      btn_reset: Reset
+      title: "Reset password"
     update:
       error_empty: "Password can't empty!"
       success_update: "Password has been reset"
-    error_expired: "Password reset has expired."
+  sessions:
+    create:
+      error_activation: "Your account is not activated! Please check your mail!"
+      flash_login_error_message: "Invalid email/password combination"
+    new:
+      lb_check_box: "Remember login in on this computer?"
+      lb_create_new_user: "Create a new user? %{link_signup}!."
+      lb_email: Email
+      lb_forgot: "(Forgot password)"
+      lb_password: Password
+      sign_up_href: "Sign up now"
+      title: "Log In"
+  shared:
+    micropost_form:
+      btn_post: Post
+      compose: "Compose something for new your post"
+    user_info:
+      view_my_profile: "view my profile"
+      micro: "Microposts"
+  static_pages:
+    about:
+      book_href: "Ruby on Rails Tutorial book"
+      content: "The %{link_home} is a %{link_book} and %{link_screencast} to teach web development with %{link_rails}. This is the sample application for the tutorial."
+      page_name: About
+      rails_href: "Ruby on Rails"
+      screencast_href: "screencast series"
+      title: About
+      tutorial_href: "Ruby on Rails Tutorial"
+    base_title: "Ruby on Rails Tutorial"
+    contact:
+      content: "This is contact page"
+      page_name: Contact
+      title: Contact
+    help:
+      book_href: "Ruby on Rails Tutorial book"
+      content: "Get help on the Ruby on Rails Tutorial at the %{link_help}. To get help on this sample app, see the %{link_book}."
+      help_href: "Rails Tutorial help section"
+      page_name: Help
+      title: Help
+    home:
+      btn_sign_up: "Sign up now!"
+      content: "This is the home page for the %{link_home} sample application."
+      page_name: Home
+      title: Home
+      title_feed: "Microposts feed"
+      tutorial_href: "Ruby on Rails Tutorial"
+    not_found:
+      content: "404 Not Found"
+      title: "Not Found"
+  user_mailer:
+    account_activation:
+      btn_activate: Activate
+      content_mailer: "This email use to activate your account Sample App. Please click in link underneath"
+      title: "Account activation"
+      welcome: "Hi %{name}!"
+    password_reset:
+      btn_reset: Reset
+      content_mailer: "This email use to reset you password. expired in 2 hours. Please click link underneath"
+      title: "Password Reset"
+      welcome: "Hi %{name}"
+  users:
+    create:
+      check_your_email: "Check your email to activation your account!"
+    edit:
+      btn_update: Update
+      heading: "Update your profile"
+      title: Edit
+    form:
+      lb_email: Email
+      lb_name: Name
+      lb_password: Password
+      lb_password_confirmation: "Password Confirmation"
+    index:
+      title: "All Users"
+    new:
+      btn_create: "Create account"
+      content: "This is sign up page. OK!"
+      title: "Sign Up"
+    plz_login: "Please login!"
+    show:
+      count_post: "Microposts %{count}"
+    success_deleted_message: "Deleted complete"
+    success_update_messages: "Updated your profile!"
+    user:
+      btn_delete: Delete
+      confirm_messages: "Are you sure delete user %{user_name}?"
+    welcome_messages: "Welcome %{user_name} to Blog! "

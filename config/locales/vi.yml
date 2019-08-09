@@ -1,129 +1,140 @@
+---
 vi:
+  account_activations:
+    edit:
+      error_link_activation: "Link kích hoạt không được chấp nhận!"
+      success_activated: "Tài khoản của bạn đã được kích hoạt"
+  alert:
+    micropost:
+      error_size_image: "Dung lượng ảnh lớn hơn 5MB. Vui lòng chọn lại!"
   hello: "Xin chào!"
   layouts:
+    footer:
+      btn_about: "Thông tin thêm"
+      btn_contact: "Liên hệ"
+      btn_news: "Tin tức"
+      design_by:
+        content: "Bài %{link_home} được làm bởi %{link_pro} ."
+        pro_href: "Michael Hartl"
     header:
-      btn_en: "English"
-      btn_vi: "Vietnamese"
-      btn_home: "Trang chủ"
-      btn_help: "Hỗ trợ"
-      btn_login: "Đăng nhập"
       btn_account: "Tài khoản"
+      btn_en: English
+      btn_help: "Hỗ trợ"
+      btn_home: "Trang chủ"
+      btn_login: "Đăng nhập"
       btn_logout: "Đăng xuất"
       btn_profile: "Thông tin cá nhân"
       btn_settings: "Cài đặt"
       btn_users: "Tất cả người dùng"
-    footer:
-      design_by:
-        content: "Bài %{link_home} được làm bởi %{link_pro} ."
-        pro_href: "Michael Hartl"
-      btn_about: "Thông tin thêm"
-      btn_contact: "Liên hệ"
-      btn_news: "Tin tức"
-  static_pages:
-    base_title: "Hướng dẫn học Ruby on Rails"
-    home:
-      title: "Trang chủ"
-      btn_sign_up: "Đăng kí ngay!"
-      page_name: "Trang chủ"
-      content: "Đây là trang chủ %{link_home} với ứng dụng mẫu."
-      tutorial_href: "hướng dẫn Ruby on Rails"
-
-    help:
-      title: "Trang hỗ trợ"
-      page_name: "Hỗ trợ"
-      content: "Nhận sự hỗ trợ về Ruby on Rails tại %{link_help}.
-                 Để nhận sự hỗ trợ về ứng dụng mẫu, hãy đọc %{link_book}."
-      help_href: "hỗ trợ học Rails"
-      book_href: "quyển sách Ruby on Rails Tutorial"
-
-    about:
-      title: "Thông tin thêm"
-      page_name: "Thông tin thêm"
-      content: "Trang %{link_home} là một %{link_book} và %{link_screencast}
-                để dạy cho các lập trình viên về %{link_rails}.
-                Đây là một trang web mẫu về %{link_rails}."
-      tutorial_href: "hướng dẫn Ruby on Rails"
-      book_href: "quyển sách Ruby on Rails Tutorial"
-      screencast_href: "loạt screencast"
-      rails_href: "Ruby on Rails"
-
-    contact:
-      title: "Liên hệ"
-      page_name: "Liên hệ"
-      content: "Đây là trang liên hệ!"
-
-    not_found:
-      title: "Không tìm thấy"
-      content: "Lỗi không tìm thấy trang"
-
-  users:
-    new:
-      title: "Đăng kí"
-      btn_create: "Tạo tài khoản"
-    welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+      btn_vi: Vietnamese
+  microposts:
     create:
-      check_your_email: "Kiểm tra email của bạn để kích hoạt tài khoản!"
-    edit:
-      title: "Chỉnh sửa"
-      heading: "Cập nhật thông tin cá nhân"
-      btn_update: "Cập nhật"
-    index:
-      title: "Tất cả người dùng"
-    success_update_messages: "Đã cập nhật thông tin của bạn!"
-    success_deleted_message: "Đã xóa thành công! "
-    plz_login: "Vui lòng đăng nhập!"
-    user:
-      btn_delete: "Xóa"
-      confirm_messages: "Bạn có chắc muốn xóa người dùng %{user_name}?"
-    form:
-      lb_name: "Tên của bạn"
-      lb_email: "Email"
-      lb_password: "Mật khẩu"
-      lb_password_confirmation: "Xác nhận mật khẩu"
-
-  sessions:
-    new:
-      title: "Đăng nhập"
-      lb_email: "Email"
-      lb_password: "Mật khẩu"
-      lb_create_new_user: "Tạo một tài khoản mới? %{link_signup}!."
-      sign_up_href: "Đăng kí ngay"
-      lb_check_box: "Ghi nhớ đăng nhập?"
-      lb_forgot: "(Quên mật khẩu)"
-    create:
-      flash_login_error_message: "Email hoặc password không đúng!"
-      error_activation: "Tài khoản của bạn chưa được kích hoạt! Hãy kiểm tra email!"
-
-  user_mailer:
-    account_activation:
-      title: "Kích hoạt tài khoản"
-      welcome: "Chào %{name}!"
-      content_mailer: "Đây là email hướng dẫn bạn kích hoạt tài khoản Sample App. Vui lòng click link bên dưới:"
-      btn_activate: "Kích hoạt"
-    password_reset:
-      title: "Đặt lại mật khẩu"
-      welcome: "Chào %{name}!"
-      content_mailer: "Đây là email giúp bạn đặt lại mật khẩu. Vui click link bên dưới để đặt lại mạt khẩu.
-                        Chú ý: Thời hạn 2 giờ trước khi link vô hiệu!"
-      btn_reset: "Đặt lại mật khẩu"
-
-  account_activations:
-    edit:
-      success_activated: "Tài khoản của bạn đã được kích hoạt"
-      error_link_activation: "Link kích hoạt không được chấp nhận!"
+      errors_delete: "Xóa không thành công!"
+      success_created: "Đã đăng bài!"
+      success_deleted: "Đã gỡ bỏ bài đăng"
+    limmit_size_pic: "Nên chọn file dưới 5MB"
+    micropost:
+      btn_delete: "Xóa bài"
+      messages_sure: "Bạn chắn muốn xóa?"
+      posted_ago: "Đã đăng tải %{time} trước."
+    correct_user:
+      missing_micropost: "Bài đăng không tồn tại!"
   password_resets:
-    new:
-      title: "Đặt lại mật khẩu"
-      btn_reset: Yêu cầu
     edit:
-      title: "Đặt lại mật khẩu"
+      btn_update: "Cập nhật"
       lb_password: "Mật khẩu"
       lb_password_confirmation: "Xác nhận mật khẩu"
-      btn_update: "Cập nhật"
+      title: "Đặt lại mật khẩu"
+    error_expired: "Hết hạn đặt lại mật khẩu!"
+    new:
+      btn_reset: "Yêu cầu"
+      title: "Đặt lại mật khẩu"
     update:
       error_empty: "Mật khẩu không được để trống!"
       success_update: "Mật khẩu đã được đặt lại"
-    error_expired: "Hết hạn đặt lại mật khẩu!"
-
-
-
+  sessions:
+    create:
+      error_activation: "Tài khoản của bạn chưa được kích hoạt! Hãy kiểm tra email!"
+      flash_login_error_message: "Email hoặc password không đúng!"
+    new:
+      lb_check_box: "Ghi nhớ đăng nhập?"
+      lb_create_new_user: "Tạo một tài khoản mới? %{link_signup}!."
+      lb_email: Email
+      lb_forgot: "(Quên mật khẩu)"
+      lb_password: "Mật khẩu"
+      sign_up_href: "Đăng kí ngay"
+      title: "Đăng nhập"
+  shared:
+    micropost_form:
+      btn_post: Đăng
+      compose: "Soạn nội dung cho bài đăng..."
+    user_info:
+      view_my_profile: "Xem trang cá nhân"
+      micro: "Bài đăng"
+  static_pages:
+    about:
+      book_href: "quyển sách Ruby on Rails Tutorial"
+      content: "Trang %{link_home} là một %{link_book} và %{link_screencast} để dạy cho các lập trình viên về %{link_rails}. Đây là một trang web mẫu về %{link_rails}."
+      page_name: "Thông tin thêm"
+      rails_href: "Ruby on Rails"
+      screencast_href: "loạt screencast"
+      title: "Thông tin thêm"
+      tutorial_href: "hướng dẫn Ruby on Rails"
+    base_title: "Hướng dẫn học Ruby on Rails"
+    contact:
+      content: "Đây là trang liên hệ!"
+      page_name: "Liên hệ"
+      title: "Liên hệ"
+    help:
+      book_href: "quyển sách Ruby on Rails Tutorial"
+      content: "Nhận sự hỗ trợ về Ruby on Rails tại %{link_help}. Để nhận sự hỗ trợ về ứng dụng mẫu, hãy đọc %{link_book}."
+      help_href: "hỗ trợ học Rails"
+      page_name: "Hỗ trợ"
+      title: "Trang hỗ trợ"
+    home:
+      btn_sign_up: "Đăng kí ngay!"
+      content: "Đây là trang chủ %{link_home} với ứng dụng mẫu."
+      page_name: "Trang chủ"
+      title: "Trang chủ"
+      title_feed: "Nguồn bài đăng"
+      tutorial_href: "hướng dẫn Ruby on Rails"
+    not_found:
+      content: "Lỗi không tìm thấy trang"
+      title: "Không tìm thấy"
+  user_mailer:
+    account_activation:
+      btn_activate: "Kích hoạt"
+      content_mailer: "Đây là email hướng dẫn bạn kích hoạt tài khoản Sample App. Vui lòng click link bên dưới:"
+      title: "Kích hoạt tài khoản"
+      welcome: "Chào %{name}!"
+    password_reset:
+      btn_reset: "Đặt lại mật khẩu"
+      content_mailer: "Đây là email giúp bạn đặt lại mật khẩu. Vui click link bên dưới để đặt lại mạt khẩu. Chú ý: Thời hạn 2 giờ trước khi link vô hiệu!"
+      title: "Đặt lại mật khẩu"
+      welcome: "Chào %{name}!"
+  users:
+    create:
+      check_your_email: "Kiểm tra email của bạn để kích hoạt tài khoản!"
+    edit:
+      btn_update: "Cập nhật"
+      heading: "Cập nhật thông tin cá nhân"
+      title: "Chỉnh sửa"
+    form:
+      lb_email: Email
+      lb_name: "Tên của bạn"
+      lb_password: "Mật khẩu"
+      lb_password_confirmation: "Xác nhận mật khẩu"
+    index:
+      title: "Tất cả người dùng"
+    new:
+      btn_create: "Tạo tài khoản"
+      title: "Đăng kí"
+    plz_login: "Vui lòng đăng nhập!"
+    show:
+      count_post: "Các bài đăng %{count}"
+    success_deleted_message: "Đã xóa thành công! "
+    success_update_messages: "Đã cập nhật thông tin của bạn!"
+    user:
+      btn_delete: Xóa
+      confirm_messages: "Bạn có chắc muốn xóa người dùng %{user_name}?"
+    welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
