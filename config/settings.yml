@@ -8,3 +8,4 @@ user:
 gravatar:
   size: 80
   size_list: 30
+reset_expired: 2
