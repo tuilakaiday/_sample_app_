@@ -61,6 +61,8 @@ vi:
       title: "Đăng kí"
       btn_create: "Tạo tài khoản"
     welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+    create:
+      check_your_email: "Kiểm tra email của bạn để kích hoạt tài khoản!"
     edit:
       title: "Chỉnh sửa"
       heading: "Cập nhật thông tin cá nhân"
@@ -89,5 +91,18 @@ vi:
       lb_check_box: "Ghi nhớ đăng nhập?"
     create:
       flash_login_error_message: "Email hoặc password không đúng!"
+      error_activation: "Tài khoản của bạn chưa được kích hoạt! Hãy kiểm tra email!"
+
+  user_mailer:
+    account_activation:
+      title: "Kích hoạt tài khoản"
+      welcome: "Chào %{name}!"
+      content_mailer: "Đây là email hướng dẫn bạn kích hoạt tài khoản Sample App. Vui lòng click link bên dưới:"
+      btn_activate: "Kích hoạt"
+
+  account_activations:
+    edit:
+      success_activated: "Tài khoản của bạn đã được kích hoạt"
+      error_link_activation: "Link kích hoạt không được chấp nhận!"
 
 
