@@ -74,6 +74,9 @@ en:
     user_info:
       view_my_profile: "view my profile"
       micro: "Microposts"
+    stats:
+      followers: "%{count} followers"
+      following: "%{count} following"
   static_pages:
     about:
       book_href: "Ruby on Rails Tutorial book"
@@ -142,3 +145,16 @@ en:
       btn_delete: Delete
       confirm_messages: "Are you sure delete user %{user_name}?"
     welcome_messages: "Welcome %{user_name} to Blog! "
+    show_follow:
+      title: Follow"
+      microposts: "Microposts"
+      view_my_profile: "Profile"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    unfollow:
+      btn_unfollow: "Unfollow"
+    follow:
+      btn_follow: "Follow"
+

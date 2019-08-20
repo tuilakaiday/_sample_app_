@@ -50,7 +50,22 @@ class UsersController < ApplicationController
     end
   end
 
+  def following
+    @title = t ".title"
+    @users = @user.following.paginate(page: params[:page],
+      per_page: Settings.per_page)
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".title"
+    @users = @user.followers.paginate(page: params[:page],
+      per_page: Settings.per_page)
+    render "show_follow"
+  end
+
   private
+
   def user_params
     params.require(:user).permit(:name, :email, :password,
       :password_confirmation)
