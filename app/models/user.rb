@@ -2,9 +2,10 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   before_create :create_activation_digest
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
   validates :name, presence: true,
     length: {maximum: Settings.user.max_length_name}
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true,
     length: {maximum: Settings.user.max_length_email},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
@@ -12,6 +13,8 @@ class User < ApplicationRecord
   validates :password, presence: true,
     length: {minimum: Settings.user.min_length_password}
   scope :activated, ->{where activated: true}
+
+  has_many :microposts, dependent: :destroy
 
   def self.digest string
     if ActiveModel::SecurePassword.min_cost
@@ -48,21 +51,21 @@ class User < ApplicationRecord
     UserMailer.account_activation(self).deliver_now
   end
 
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
   def create_reset_digest
     self.reset_token = User.new_token
     update_attributes(reset_digest: User.digest(reset_token),
       reset_sent_at: Time.zone.now)
   end
 
-  def send_password_reset_email
-    UserMailer.password_reset(self).deliver_now
-  end
-
   def password_reset_expired?
     reset_sent_at < Settings.reset_expired.hours.ago
   end
-  private
 
+  private
   def downcase_email
     email.downcase!
   end

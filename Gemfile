@@ -25,7 +25,8 @@ gem "uglifier", ">= 1.3.0"
 gem "rubocop", "~> 0.54.0", require: false
 # Support mutil language
 gem "rails-i18n"
-
+# Suppot mutil language in js
+gem "i18n-js"
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -38,6 +39,9 @@ gem "jbuilder", "~> 2.5"
 gem "bcrypt", "~> 3.1.7"
 # Use Faker
 gem "faker", "~> 2.1.0"
+# Use for image
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 # Use will-paginate
 gem "will_paginate", "~> 3.1.7"
 # Use bootstrap-will-paginate
@@ -79,6 +83,11 @@ group :test do
   gem "minitest-reporters",       "1.1.14"
   gem "rails-controller-testing", "1.0.2"
   gem "sqlite3", "1.3.13"
+end
+
+group :production do
+  gem "fog", "1.42"
+  gem "pg",  "0.20.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
