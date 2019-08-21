@@ -34,6 +34,5 @@ class MicropostsController < ApplicationController
       flash[:danger] = t ".missing_micropost"
       redirect_to root_url
     end
-
   end
 end

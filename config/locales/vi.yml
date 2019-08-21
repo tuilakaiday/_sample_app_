@@ -71,6 +71,9 @@ vi:
     user_info:
       view_my_profile: "Xem trang cá nhân"
       micro: "Bài đăng"
+    stats:
+      followers: "%{count} được theo dõi"
+      following: "%{count} đang theo dõi"
   static_pages:
     about:
       book_href: "quyển sách Ruby on Rails Tutorial"
@@ -138,3 +141,15 @@ vi:
       btn_delete: Xóa
       confirm_messages: "Bạn có chắc muốn xóa người dùng %{user_name}?"
     welcome_messages: "Chào mừng %{user_name} đến với trang Blog!"
+    show_follow:
+      title: "Theo dõi"
+      microposts: "Bài đăng"
+      view_my_profile: "Xem thông tin"
+    following:
+      title: "Đang theo dõi"
+    followers:
+      title: "Được theo dõi"
+    unfollow:
+      btn_unfollow: "Bỏ theo dõi"
+    follow:
+      btn_follow: "Theo dõi"
